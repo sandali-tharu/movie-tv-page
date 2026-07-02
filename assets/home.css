@@ -2,12 +2,12 @@
 body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #ade8f4;
-            color:#212529 ;
+            background: #0a0b0c
+            
         }
 /*nav style*/
 header {
-            background-color: #c8cfd8;
+            background-color: #0a0b0c;
             
             padding: 10px;
             text-align: center;
@@ -111,7 +111,7 @@ body{
 
     border:none;
 
-    background:#092ae5;
+    background:#5a75e8;
 
     color:white;
 
@@ -141,15 +141,41 @@ body{
         }
 .movies-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+
+    /* Card width eka */
+    grid-auto-columns: 250px;
+
+    /* Cards right side ekata */
+    grid-auto-flow: column;
+
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    padding-bottom: 10px;
             
         }
+        .movies-grid::-webkit-scrollbar{
+    height:8px;
+}
+
+.movies-grid::-webkit-scrollbar-thumb{
+    background:#ff9900;
+    border-radius:10px;
+}
+
+.movies-grid::-webkit-scrollbar-track{
+    background:#222;
+}
 .movie {
-            background-color: #1c1c1c;
-            border-radius: 8px;
-            overflow-x: scroll;
+            background-color: #943333;
+            border-radius: 50px;
+            overflow-x: hidden;
             transition: transform 0.3s ease;
+            width:250px;
         }
    
 
@@ -201,6 +227,9 @@ body{
  .movie-buttons a:hover {
             background-color: #2cd72f;
         }
+    h2{
+        color: white;
+    }
 
 /* ===========================
    VIDEO
