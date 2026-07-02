@@ -7,35 +7,128 @@ body {
         }
 /*nav style*/
 header {
-            background-color: #00060e;
+            background-color: #c8cfd8;
             
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            background:rgba(0, 0, 0, 0.08);
+
+            backdrop-filter:blur(15px);
+
+            border:0px solid rgba(0, 0, 0, 0.2);
+            
         }
 header h1 {
             margin: 0;
             color:  #5a75e8;
-            text-align: center;
+            text-align: left;
+
             
         }
 nav {
-            margin-top: 10px;
+            margin-top: 15px;
+            text-align: right;
         }
 nav a {
             color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
             font-size: 16px;
+           
+            
         }
+.edit{
+    margin-top: -30px;
+    text-align: justify right;
+}
  nav a:hover {
             color: #ff9900;
         }
 #title{
     text-align: center;
 }
+body{
+    background:#111;
+    font-family:Arial, sans-serif;
+}
+
+.search-box{
+    width: 750px;
+    height:35px;
+
+    margin-left: 250px;
+    position: relative;
+    margin-top: -45px;
+
+    display: flex;
+
+    background:#1c1c1c;
+
+    border:2px solid #333;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    transition:.4s;
+    
+    
+}
+
+.search-box:hover{
+    border-color:#3109e5;
+
+    box-shadow:0 0 20px rgba(13, 9, 229, 0.5);
+}
+
+.search-box input{
+
+    flex:1;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:18px;
+
+    padding:0 20px;
+}
+
+.search-box input::placeholder{
+    color:#aaa;
+}
+
+.search-box button{
+
+    width:70px;
+
+    border:none;
+
+    background:#092ae5;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.search-box button:hover{
+
+    background:#2c33ff;
+
+}
+
+
 /*card design*/
 
 
@@ -109,29 +202,159 @@ nav a {
             background-color: #2cd72f;
         }
 
+/* ===========================
+   VIDEO
+=========================== */
+
 .video-section{
-    position: relative;
-    width: 100%;
-    height: 700px;   /* Oya one height eka */
-    overflow: hidden;
-    background: #000;
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background:#000;
 }
 
 .video-section iframe{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position:absolute;
+    top:50%;
+    left:50%;
 
-    width: 177.77777778vh;
-    height: 100vh;
+    width:177.77vh;
+    height:100vh;
 
-    min-width: 100%;
-    min-height: 100%;
+    min-width:100%;
+    min-height:100%;
 
-    transform: translate(-50%, -50%) scale(1.3);
+    transform:translate(-50%,-50%) scale(1.35);
 
-    border: none;
-    pointer-events: none;
+    animation:videoReveal 8s ease forwards;
+
+    border:none;
+    pointer-events:none;
+}
+
+/* Black Overlay */
+
+.video-section::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0);
+    animation:darkOverlay 8s ease forwards;
+}
+
+/* ===========================
+   FILMFLIX TEXT
+=========================== */
+
+.overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+}
+
+.overlay h1{
+
+    font-size:110px;
+    color:#ffffff;
+
+    font-family:Arial, sans-serif;
+    font-weight:900;
+    letter-spacing:10px;
+    text-transform:uppercase;
+
+    opacity:0;
+
+    transform:scale(.5);
+
+    text-shadow:
+        0 0 0px #fff;
+
+    animation:textReveal 3s ease forwards;
+    animation-delay:5s;
+}
+
+/* ===========================
+   VIDEO ANIMATION
+=========================== */
+
+@keyframes videoReveal{
+
+    0%{
+        transform:translate(-50%,-50%) scale(1.35);
+        filter:blur(0px) brightness(100%);
+    }
+
+    40%{
+        transform:translate(-50%,-50%) scale(1.25);
+        filter:blur(0px) brightness(80%);
+    }
+
+    70%{
+        transform:translate(-50%,-50%) scale(1.15);
+        filter:blur(2px) brightness(60%);
+    }
+
+    100%{
+        transform:translate(-50%,-50%) scale(1.1);
+        filter:blur(5px) brightness(35%);
+    }
+
+}
+
+/* ===========================
+   DARK OVERLAY
+=========================== */
+
+@keyframes darkOverlay{
+
+    from{
+        background:rgba(0,0,0,0);
+    }
+
+    to{
+        background:rgba(0,0,0,.55);
+    }
+
+}
+
+/* ===========================
+   TEXT ANIMATION
+=========================== */
+
+@keyframes textReveal{
+
+    0%{
+        opacity:0;
+        transform:scale(.5);
+        filter:blur(10px);
+    }
+
+    40%{
+        opacity:.6;
+        transform:scale(1.15);
+        filter:blur(3px);
+    }
+
+    70%{
+        opacity:1;
+        transform:scale(1.05);
+        filter:blur(0px);
+    }
+
+    100%{
+        opacity:1;
+        transform:scale(1);
+
+        text-shadow:
+            0 0 15px rgba(255,255,255,.9),
+            0 0 30px rgba(255, 255, 255, 0.9),
+            0 0 60px rgba(255, 255, 255, 0.8),
+            0 0 90px rgba(255, 255, 255, 0.7);
+    }
+
 }
 /*foter style*/
         footer {
