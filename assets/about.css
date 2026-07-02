@@ -25,3 +25,10 @@ header h1 {
     color: #ffffff; 
     letter-spacing: 1px;
 }
+
+center p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #111111;
+    margin: 40px 0;
+}
