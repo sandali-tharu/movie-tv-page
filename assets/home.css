@@ -38,8 +38,8 @@ nav a {
 }
 /*card design*/
 .contanier {
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 1500px;
+            margin: 0;
             padding: 10px;
         }
 .movies-grid {
@@ -53,6 +53,15 @@ nav a {
             overflow: hidden;
             transition: transform 0.3s ease;
         }
+    .movie_1{
+        padding: 10px;
+        max-width: 1200px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        
+
+    }
     .movie:hover {
             transform: scale(1.05);
         }
@@ -99,7 +108,7 @@ nav a {
  .movie-buttons a:hover {
             background-color: #2cd72f;
         }
-
+/*foter style*/
         footer {
             background-color: #1c1c1c;
             text-align: center;
