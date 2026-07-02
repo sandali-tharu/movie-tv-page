@@ -40,3 +40,18 @@ center p {
     gap: 25px;
     padding: 0 20px;
     }
+    .main_card_1 > div {
+    background-color: #22252a; 
+    color: #ffffff;            
+    padding: 40px 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 340px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main_card_1 > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(229, 9, 20, 0.25); 
+}
