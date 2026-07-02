@@ -1,63 +1,70 @@
 /*body style*/
 body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0a0b0c
-            
-        }
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0b0c
+}
+
 /*nav style*/
 header {
-            background-color: #0a0b0c;
-            
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background:rgba(0, 0, 0, 0.08);
+    background-color: #0a0b0c;
 
-            backdrop-filter:blur(15px);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.08);
 
-            border:0px solid rgba(0, 0, 0, 0.2);
-            
-        }
+    backdrop-filter: blur(15px);
+
+    border: 0px solid rgba(0, 0, 0, 0.2);
+
+}
+
 header h1 {
-            margin: 0;
-            color:  #5a75e8;
-            text-align: left;
+    margin: 0;
+    color: #5a75e8;
+    text-align: left;
 
-            
-        }
+
+}
+
 nav {
-            margin-top: 15px;
-            text-align: right;
-        }
+    margin-top: 15px;
+    text-align: right;
+}
+
 nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 16px;
-           
-            
-        }
-.edit{
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+
+
+}
+
+.edit {
     margin-top: -30px;
     text-align: justify right;
 }
- nav a:hover {
-            color: #ff9900;
-        }
-#title{
-    text-align: center;
-}
-body{
-    background:#111;
-    font-family:Arial, sans-serif;
+
+nav a:hover {
+    color: #ff9900;
 }
 
-.search-box{
+#title {
+    text-align: center;
+}
+
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+.search-box {
     width: 750px;
-    height:35px;
+    height: 35px;
 
     margin-left: 250px;
     position: relative;
@@ -65,66 +72,66 @@ body{
 
     display: flex;
 
-    background:#1c1c1c;
+    background: #1c1c1c;
 
-    border:2px solid #333;
+    border: 2px solid #333;
 
-    border-radius:50px;
+    border-radius: 50px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    transition:.4s;
-    
-    
+    transition: .4s;
+
+
 }
 
-.search-box:hover{
-    border-color:#3109e5;
+.search-box:hover {
+    border-color: #3109e5;
 
-    box-shadow:0 0 20px rgba(13, 9, 229, 0.5);
+    box-shadow: 0 0 20px rgba(13, 9, 229, 0.5);
 }
 
-.search-box input{
+.search-box input {
 
-    flex:1;
+    flex: 1;
 
-    background:transparent;
+    background: transparent;
 
-    border:none;
+    border: none;
 
-    outline:none;
+    outline: none;
 
-    color:white;
+    color: white;
 
-    font-size:18px;
+    font-size: 18px;
 
-    padding:0 20px;
+    padding: 0 20px;
 }
 
-.search-box input::placeholder{
-    color:#aaa;
+.search-box input::placeholder {
+    color: #aaa;
 }
 
-.search-box button{
+.search-box button {
 
-    width:70px;
+    width: 70px;
 
-    border:none;
+    border: none;
 
-    background:#5a75e8;
+    background: #5a75e8;
 
-    color:white;
+    color: white;
 
-    font-size:22px;
+    font-size: 22px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.search-box button:hover{
+.search-box button:hover {
 
-    background:#2c33ff;
+    background: #2c33ff;
 
 }
 
@@ -133,14 +140,15 @@ body{
 
 
 .contanier {
-            max-width: 1500px;
-            margin: 0;
-            padding: 10px;
-            
-            
-        }
+    max-width: 1500px;
+    margin: 0;
+    padding: 10px;
+
+
+}
+
 .movies-grid {
-            display: grid;
+    display: grid;
 
     /* Card width eka */
     grid-auto-columns: 250px;
@@ -156,179 +164,184 @@ body{
     scroll-behavior: smooth;
 
     padding-bottom: 10px;
-            
-        }
-        .movies-grid::-webkit-scrollbar{
-    height:8px;
+
 }
 
-.movies-grid::-webkit-scrollbar-thumb{
-    background:#ff9900;
-    border-radius:10px;
+.movies-grid::-webkit-scrollbar {
+    height: 8px;
 }
 
-.movies-grid::-webkit-scrollbar-track{
-    background:#222;
+.movies-grid::-webkit-scrollbar-thumb {
+    background: #ff9900;
+    border-radius: 10px;
 }
+
+.movies-grid::-webkit-scrollbar-track {
+    background: #222;
+}
+
 .movie {
-            background-color: #943333;
-            border-radius: 50px;
-            overflow-x: hidden;
-            transition: transform 0.3s ease;
-            width:250px;
-        }
-   
+    background-color: #943333;
+    border-radius: 50px;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    width: 250px;
+}
 
-    
+
+
 .movie:hover {
-            transform: scale(1.05);
-        }
+    transform: scale(1.05);
+}
 
 .movie img {
-            width: 100%;
-            display: block;
-        }
+    width: 100%;
+    display: block;
+}
 
 .movie-info {
-            padding: 15px;
-            text-align: center;
-            
-        }
+    padding: 15px;
+    text-align: center;
 
-        .movie-info h3 {
-            margin: 10px 0;
-            font-size: 18px;
-        }
+}
 
-        .movie-info p {
-            font-size: 14px;
-            color: #aaaaaa;
-        }
+.movie-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
 
-        .movie-description {
-            margin: 10px 0;
-            font-size: 14px;
-            color: #cccccc;
-        }
+.movie-info p {
+    font-size: 14px;
+    color: #aaaaaa;
+}
 
-        .movie-buttons {
-            margin-top: 10px;
-        }
+.movie-description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.movie-buttons {
+    margin-top: 10px;
+}
+
 .movie-buttons a {
-            background-color: #ff9900;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 50px;
-            display: inline-block;
-            font-size: 14px;
-        }
- .movie-buttons a:hover {
-            background-color: #2cd72f;
-        }
-    h2{
-        color: white;
-    }
+    background-color: #ff9900;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.movie-buttons a:hover {
+    background-color: #2cd72f;
+}
+
+h2 {
+    color: white;
+}
 
 /* ===========================
    VIDEO
 =========================== */
 
-.video-section{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-    background:#000;
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
 }
 
-.video-section iframe{
-    position:absolute;
-    top:50%;
-    left:50%;
+.video-section iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-    width:177.77vh;
-    height:100vh;
+    width: 177.77vh;
+    height: 100vh;
 
-    min-width:100%;
-    min-height:100%;
+    min-width: 100%;
+    min-height: 100%;
 
-    transform:translate(-50%,-50%) scale(1.35);
+    transform: translate(-50%, -50%) scale(1.35);
 
-    animation:videoReveal 8s ease forwards;
+    animation: videoReveal 8s ease forwards;
 
-    border:none;
-    pointer-events:none;
+    border: none;
+    pointer-events: none;
 }
 
 /* Black Overlay */
 
-.video-section::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0);
-    animation:darkOverlay 8s ease forwards;
+.video-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    animation: darkOverlay 8s ease forwards;
 }
 
 /* ===========================
    FILMFLIX TEXT
 =========================== */
 
-.overlay{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:10;
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
-.overlay h1{
+.overlay h1 {
 
-    font-size:110px;
-    color:#ffffff;
+    font-size: 110px;
+    color: #ffffff;
 
-    font-family:Arial, sans-serif;
-    font-weight:900;
-    letter-spacing:10px;
-    text-transform:uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 
-    opacity:0;
+    opacity: 0;
 
-    transform:scale(.5);
+    transform: scale(.5);
 
     text-shadow:
         0 0 0px #fff;
 
-    animation:textReveal 3s ease forwards;
-    animation-delay:5s;
+    animation: textReveal 3s ease forwards;
+    animation-delay: 5s;
 }
 
 /* ===========================
    VIDEO ANIMATION
 =========================== */
 
-@keyframes videoReveal{
+@keyframes videoReveal {
 
-    0%{
-        transform:translate(-50%,-50%) scale(1.35);
-        filter:blur(0px) brightness(100%);
+    0% {
+        transform: translate(-50%, -50%) scale(1.35);
+        filter: blur(0px) brightness(100%);
     }
 
-    40%{
-        transform:translate(-50%,-50%) scale(1.25);
-        filter:blur(0px) brightness(80%);
+    40% {
+        transform: translate(-50%, -50%) scale(1.25);
+        filter: blur(0px) brightness(80%);
     }
 
-    70%{
-        transform:translate(-50%,-50%) scale(1.15);
-        filter:blur(2px) brightness(60%);
+    70% {
+        transform: translate(-50%, -50%) scale(1.15);
+        filter: blur(2px) brightness(60%);
     }
 
-    100%{
-        transform:translate(-50%,-50%) scale(1.1);
-        filter:blur(5px) brightness(35%);
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+        filter: blur(5px) brightness(35%);
     }
 
 }
@@ -337,14 +350,14 @@ body{
    DARK OVERLAY
 =========================== */
 
-@keyframes darkOverlay{
+@keyframes darkOverlay {
 
-    from{
-        background:rgba(0,0,0,0);
+    from {
+        background: rgba(0, 0, 0, 0);
     }
 
-    to{
-        background:rgba(0,0,0,.55);
+    to {
+        background: rgba(0, 0, 0, .55);
     }
 
 }
@@ -353,63 +366,59 @@ body{
    TEXT ANIMATION
 =========================== */
 
-@keyframes textReveal{
+@keyframes textReveal {
 
-    0%{
-        opacity:0;
-        transform:scale(.5);
-        filter:blur(10px);
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+        filter: blur(10px);
     }
 
-    40%{
-        opacity:.6;
-        transform:scale(1.15);
-        filter:blur(3px);
+    40% {
+        opacity: .6;
+        transform: scale(1.15);
+        filter: blur(3px);
     }
 
-    70%{
-        opacity:1;
-        transform:scale(1.05);
-        filter:blur(0px);
+    70% {
+        opacity: 1;
+        transform: scale(1.05);
+        filter: blur(0px);
     }
 
-    100%{
-        opacity:1;
-        transform:scale(1);
+    100% {
+        opacity: 1;
+        transform: scale(1);
 
         text-shadow:
-            0 0 15px rgba(255,255,255,.9),
+            0 0 15px rgba(255, 255, 255, .9),
             0 0 30px rgba(255, 255, 255, 0.9),
             0 0 60px rgba(255, 255, 255, 0.8),
             0 0 90px rgba(255, 255, 255, 0.7);
     }
 
 }
+
 /*foter style*/
-        footer {
-            background-color: #1c1c1c;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            
-        }
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
+}
 
-        footer a {
-            color: #ff9900;
-            text-decoration: none;
-        }
-		.movies-grid {
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.movies-grid {
     display: grid;
     gap: 20px;
 }
-
-
-
-
-
-
