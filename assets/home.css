@@ -170,16 +170,16 @@ body {
 .movies-grid::-webkit-scrollbar {
     height: 8px;
 }
-
+/*
 .movies-grid::-webkit-scrollbar-thumb {
-    background: #ff9900;
+    background: #000000;
     border-radius: 10px;
 }
 
 .movies-grid::-webkit-scrollbar-track {
     background: #222;
 }
-
+*/
 .movie {
     background-color: #943333;
     border-radius: 50px;
