@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0a0b0c
+    background: #06121F;
 }
 
 /*nav style*/
@@ -18,7 +18,7 @@ header {
 
     backdrop-filter: blur(15px);
 
-    border: 0px solid rgba(0, 0, 0, 0.2);
+    border: 0px solid #1F4F78;
 
 }
 
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff9900;
+    color: #5a75e8;
 }
 
 #title {
@@ -58,7 +58,7 @@ nav a:hover {
 }
 
 body {
-    background: #111;
+    background: #06121F;
     font-family: Arial, sans-serif;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 */
 .movie {
-    background-color: #943333;
+    background-color: #10273D;
     border-radius: 50px;
     overflow-x: hidden;
     transition: transform 0.3s ease;
@@ -192,6 +192,10 @@ body {
 
 .movie:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,132,255,.8);
+    background-color: #163B5A;
+    color: whitesmoke;
+    border-style: double;
 }
 
 .movie img {
@@ -212,13 +216,13 @@ body {
 
 .movie-info p {
     font-size: 14px;
-    color: #aaaaaa;
+    color: #B8D8F5;
 }
 
 .movie-description {
     margin: 10px 0;
     font-size: 14px;
-    color: #cccccc;
+    color: rgba(0,132,255,0.6);
 }
 
 .movie-buttons {
@@ -226,7 +230,7 @@ body {
 }
 
 .movie-buttons a {
-    background-color: #ff9900;
+    background-color: #0084FF;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
@@ -237,7 +241,12 @@ body {
 }
 
 .movie-buttons a:hover {
-    background-color: #2cd72f;
+    background-color: greenyellow;
+    color: #000000;
+    box-shadow: 0 0 90px #0084ff;
+    border-style: solid ;
+    border-width: 2.5px;
+    border-color: #33A1FF;
 }
 
 h2 {
