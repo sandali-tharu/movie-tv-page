@@ -160,7 +160,7 @@ h1{
 
 /* hide scrollbar optional */
 .pro-grid::-webkit-scrollbar{
-    height: 6px;
+    height: 4px;
 }
 
 .pro-grid::-webkit-scrollbar-thumb{
@@ -178,8 +178,11 @@ h1{
     border-radius: 50%;
     object-fit: cover;
     display: block;
+    border-style: double;
+    border-width: 5px;
+    border-color: #0062ff;
 
-    border: 2px solid #0084ff;
+    
 }
 /*card design*/
 
@@ -215,12 +218,12 @@ h1{
 .movies-grid::-webkit-scrollbar {
     height: 8px;
 }
-/*
+
 .movies-grid::-webkit-scrollbar-thumb {
-    background: #000000;
+    background: #0004ff;
     border-radius: 10px;
 }
-
+/*
 .movies-grid::-webkit-scrollbar-track {
     background: #222;
 }
