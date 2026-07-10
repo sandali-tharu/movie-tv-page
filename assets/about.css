@@ -63,7 +63,7 @@ header h1 {
 center p {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #111111;
+    color: #ffffff;
     margin: 40px 0;
 }
 .main_card_1 {
@@ -101,8 +101,18 @@ center p {
     
     filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(354deg) brightness(93%) contrast(96%);
 }
+#miss{
+    color: antiquewhite;
+    text-align: center;
+}
+#lorem{
+    color: grey;
+    text-align: center;
+}
 button{
     background-color: #e50914;
+    display: block;
+    margin: 20px auto;
 }
 /*foter style*/
 footer {
