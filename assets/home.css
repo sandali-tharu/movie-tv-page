@@ -26,6 +26,9 @@ header h1 {
     margin: 0;
     color: #5a75e8;
     text-align: left;
+    
+    
+    
 
 
 }
@@ -33,6 +36,8 @@ header h1 {
 nav {
     margin-top: 15px;
     text-align: right;
+    
+    
 }
 
 nav a {
@@ -40,6 +45,9 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-size: 16px;
+    
+    
+    
 
 
 }
@@ -47,6 +55,7 @@ nav a {
 .edit {
     margin-top: -30px;
     text-align: justify right;
+    justify-content: center;
 }
 
 nav a:hover {
@@ -198,10 +207,10 @@ h1{
 .movies-grid {
     display: grid;
 
-    /* Card width eka */
+    /* Card width  */
     grid-auto-columns: 250px;
 
-    /* Cards right side ekata */
+    /* Cards right side  */
     grid-auto-flow: column;
 
     gap: 20px;
