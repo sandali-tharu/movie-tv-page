@@ -131,6 +131,30 @@ textarea:hover{
             transform: scale(1.06);
 
         }
+
+        /foter style/
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.movies-grid {
+    display: grid;
+    gap: 20px;
+}
    
 
 
